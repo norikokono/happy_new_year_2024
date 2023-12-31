@@ -1,0 +1,66 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #171717;
+    color: #999;
+    font: 100%/18px helvetica, arial, sans-serif;
+    margin-left: 0;
+}
+canvas {
+    vertical-align: middle;
+}
+#canvas-container {
+    height: 900px;
+    position: absolute;
+    width: 1600px;
+    z-index: 2;
+}
+canvas {
+    cursor: crosshair;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+canvas:active {
+    cursor: crosshair;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.reference {
+    color: #516583;
+    text-decoration: none;
+}
+
+a {
+    color: #384963;
+    text-decoration: none;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text */
+span {
+    font-size: 110px;
+    color: #fff;
+    /* text-align: center; */
+    margin-left: 2rem;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
